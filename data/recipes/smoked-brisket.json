@@ -1,0 +1,126 @@
+{
+  "id": "smoked-brisket",
+  "title": "Smoked Brisket",
+  "description": "Texas-style whole packer brisket with a simple salt and pepper rub, smoked low and slow over post oak.",
+  "tags": ["beef", "smoked", "low-and-slow", "bbq"],
+  "difficulty": "hard",
+  "images": {
+    "cover": "/images/recipes/smoked-brisket/cover.jpg"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "date": "2025-06-15",
+      "rating": 6.5,
+      "prepTime": 30,
+      "cookTime": 840,
+      "servings": 12,
+      "temperature": {
+        "grill": "110°C / 225°F",
+        "internalTarget": "96°C / 205°F"
+      },
+      "equipment": ["Offset smoker", "Meat thermometer", "Butcher paper"],
+      "weather": "Sunny, 28°C, calm",
+      "ingredients": [
+        { "name": "Whole packer brisket", "amount": "6", "unit": "kg" },
+        { "name": "Coarse black pepper", "amount": "4", "unit": "tbsp" },
+        { "name": "Coarse kosher salt", "amount": "4", "unit": "tbsp" },
+        { "name": "Post oak wood splits", "amount": "8", "unit": "pieces" },
+        { "name": "Yellow mustard (binder)", "amount": "2", "unit": "tbsp" }
+      ],
+      "execution": [
+        "Trim brisket, removing hard fat and silver skin. Leave about 6mm fat cap.",
+        "Apply thin coat of yellow mustard as binder.",
+        "Season generously with 50/50 salt and pepper mix.",
+        "Start fire in offset smoker with post oak, stabilize at 110°C.",
+        "Place brisket fat side up on the smoker, point end towards firebox.",
+        "Maintain temperature by adding splits every 45-60 minutes.",
+        "Spritz with apple cider vinegar every hour after the first 3 hours.",
+        "When bark sets and internal temp hits 75°C (~6 hours), wrap in butcher paper.",
+        "Return to smoker until internal temp reaches 96°C and probe slides in like butter.",
+        "Rest in cooler for at least 1 hour before slicing.",
+        "Slice flat against the grain, about pencil-width thickness. Chop or pull the point."
+      ],
+      "notes": "First attempt. The flat came out slightly dry — probably cooked too long before wrapping. The point was excellent though. Need to wrap earlier next time. Bark color was good but could be darker. Post oak flavor was subtle, might add some hickory chunks.",
+      "pairings": ["Pickled red onions", "White bread", "Dill pickles", "IPA"]
+    },
+    {
+      "version": 2,
+      "date": "2025-08-22",
+      "rating": 8.0,
+      "prepTime": 30,
+      "cookTime": 780,
+      "servings": 12,
+      "temperature": {
+        "grill": "120°C / 250°F",
+        "internalTarget": "96°C / 205°F"
+      },
+      "equipment": ["Offset smoker", "Meat thermometer", "Butcher paper", "Spray bottle"],
+      "weather": "Overcast, 22°C, light wind from south",
+      "ingredients": [
+        { "name": "Whole packer brisket", "amount": "5.5", "unit": "kg" },
+        { "name": "Coarse black pepper (16 mesh)", "amount": "5", "unit": "tbsp" },
+        { "name": "Coarse kosher salt", "amount": "4", "unit": "tbsp" },
+        { "name": "Garlic powder", "amount": "1", "unit": "tbsp" },
+        { "name": "Post oak wood splits", "amount": "6", "unit": "pieces" },
+        { "name": "Hickory chunks", "amount": "3", "unit": "pieces" },
+        { "name": "Apple cider vinegar", "amount": "1", "unit": "cup" },
+        { "name": "Water for spritz", "amount": "1", "unit": "cup" }
+      ],
+      "execution": [
+        "Trim brisket. Slightly more aggressive trim on the flat — thinner fat cap (~4mm).",
+        "Season with salt, 16-mesh pepper, and garlic powder. No binder this time.",
+        "Start fire with post oak, add hickory chunks for the first 3 hours only.",
+        "Smoker at 120°C — slightly hotter than v1 for better bark development.",
+        "Fat side up, point towards firebox.",
+        "Spritz with 50/50 ACV and water every 45 minutes after bark starts setting (~2.5 hours).",
+        "Wrap in butcher paper at 73°C internal (~5 hours). Paper was tighter this time.",
+        "Cook until 96°C and probe tender. Total cook around 13 hours.",
+        "Rest in cooler wrapped in towels for 2 hours.",
+        "Slice and serve."
+      ],
+      "changelog": "Bumped temp to 120°C for better bark. Added garlic powder to rub. Dropped the mustard binder. Mixed in hickory chunks early in the cook. Tighter butcher paper wrap. Longer rest period.",
+      "notes": "Huge improvement. The flat was juicy this time — the higher temp and tighter wrap made a difference. Hickory added a nice depth without overpowering the post oak. The garlic powder is staying. Bark was mahogany and crispy. Want to try a hot-and-fast version next time to see how it compares.",
+      "pairings": ["Pickled red onions", "White bread", "Jalapeño cheddar sausage", "Stout beer"],
+      "images": ["/images/recipes/smoked-brisket/v2-bark.jpg"]
+    },
+    {
+      "version": 3,
+      "date": "2025-11-03",
+      "rating": 9.2,
+      "prepTime": 25,
+      "cookTime": 420,
+      "servings": 10,
+      "temperature": {
+        "grill": "150°C / 300°F",
+        "internalTarget": "96°C / 205°F"
+      },
+      "equipment": ["Kamado grill", "Meat thermometer", "Butcher paper", "Heat deflector"],
+      "weather": "Cool, 8°C, no wind",
+      "ingredients": [
+        { "name": "Whole packer brisket", "amount": "5", "unit": "kg" },
+        { "name": "Coarse black pepper (16 mesh)", "amount": "5", "unit": "tbsp" },
+        { "name": "Coarse kosher salt", "amount": "4", "unit": "tbsp" },
+        { "name": "Garlic powder", "amount": "1", "unit": "tbsp" },
+        { "name": "Onion powder", "amount": "1", "unit": "tsp" },
+        { "name": "Post oak chunks", "amount": "4", "unit": "pieces" },
+        { "name": "Beef tallow", "amount": "3", "unit": "tbsp" }
+      ],
+      "execution": [
+        "Trim brisket with slightly thicker fat cap (~5mm) for the higher heat cook.",
+        "Season with salt, pepper, garlic powder, and onion powder.",
+        "Set up kamado with heat deflector for indirect heat at 150°C.",
+        "Add post oak chunks to the charcoal.",
+        "Place brisket fat side down (different from offset — fat shields from direct heat below).",
+        "No spritz for hot-and-fast — rely on the higher heat for bark.",
+        "Wrap in butcher paper at 76°C internal, adding beef tallow before wrapping.",
+        "Continue cooking until probe tender at 96°C. Total cook around 7 hours.",
+        "Rest in cooler for 2 hours minimum.",
+        "Slice and serve. The tallow-wrapped flat was incredibly moist."
+      ],
+      "changelog": "Hot-and-fast method at 150°C on kamado instead of offset. Added onion powder. Used beef tallow in the wrap. Fat side down for kamado. No spritz needed. Total cook time cut nearly in half.",
+      "notes": "Best brisket yet. The hot-and-fast method on the kamado is a game changer — same quality in half the time. The beef tallow wrap created an unbelievably juicy flat. Bark was slightly different character than the offset — more caramelized, less smoky. Both good in different ways. The onion powder rounds out the rub nicely. This is my go-to method now. Next experiment: overnight cook at 100°C for maximum smoke.",
+      "pairings": ["Pickled red onions", "Coleslaw", "Cornbread", "Texas toast", "Amber ale"]
+    }
+  ]
+}

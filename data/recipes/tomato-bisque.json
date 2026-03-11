@@ -1,0 +1,95 @@
+{
+  "id": "tomato-bisque",
+  "title": "Roasted Tomato Bisque",
+  "description": "A rich, creamy tomato bisque made with oven-roasted tomatoes, roasted garlic, and a touch of cream. Comforting and deeply flavorful.",
+  "tags": ["soup", "vegetarian", "comfort-food", "roasted"],
+  "difficulty": "easy",
+  "images": {
+    "cover": "/images/recipes/tomato-bisque/cover.jpg"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "date": "2025-09-10",
+      "rating": 7.0,
+      "prepTime": 15,
+      "cookTime": 60,
+      "servings": 6,
+      "temperature": {
+        "oven": "200°C / 400°F"
+      },
+      "ingredients": [
+        { "name": "Roma tomatoes", "amount": "1.5", "unit": "kg" },
+        { "name": "Yellow onion", "amount": "1", "unit": "large" },
+        { "name": "Garlic cloves", "amount": "6" },
+        { "name": "Olive oil", "amount": "3", "unit": "tbsp" },
+        { "name": "Vegetable stock", "amount": "500", "unit": "ml" },
+        { "name": "Heavy cream", "amount": "120", "unit": "ml" },
+        { "name": "Fresh basil leaves", "amount": "10" },
+        { "name": "Sugar", "amount": "1", "unit": "tsp" },
+        { "name": "Salt" },
+        { "name": "Black pepper" },
+        { "name": "Butter", "amount": "2", "unit": "tbsp" }
+      ],
+      "execution": [
+        "Preheat oven to 200°C.",
+        "Halve the tomatoes and place cut-side up on a sheet pan. Drizzle with olive oil, season with salt and pepper.",
+        "Tuck whole garlic cloves among the tomatoes. Quarter the onion and add to the pan.",
+        "Roast for 40 minutes until tomatoes are caramelized and slightly charred.",
+        "Transfer everything to a large pot. Add vegetable stock.",
+        "Bring to a simmer and cook for 10 minutes.",
+        "Blend with an immersion blender until smooth.",
+        "Stir in cream, butter, and sugar. Season to taste.",
+        "Serve topped with torn basil leaves."
+      ],
+      "notes": "Good base recipe but needs more depth. The sugar helps with acidity but feels like a band-aid. Maybe roast longer for more natural sweetness? Could use some heat — thinking roasted red pepper or chili flakes next time. The cream amount was right — rich but not heavy.",
+      "pairings": ["Grilled cheese sandwich", "Crusty sourdough bread"]
+    },
+    {
+      "version": 2,
+      "date": "2025-12-01",
+      "rating": 8.8,
+      "prepTime": 20,
+      "cookTime": 75,
+      "servings": 6,
+      "temperature": {
+        "oven": "220°C / 425°F"
+      },
+      "equipment": ["Sheet pan", "Immersion blender"],
+      "ingredients": [
+        { "name": "Roma tomatoes", "amount": "1.5", "unit": "kg" },
+        { "name": "Red bell pepper", "amount": "2", "unit": "large" },
+        { "name": "Yellow onion", "amount": "1", "unit": "large" },
+        { "name": "Garlic head", "amount": "1", "unit": "whole" },
+        { "name": "Olive oil", "amount": "4", "unit": "tbsp" },
+        { "name": "Vegetable stock", "amount": "400", "unit": "ml" },
+        { "name": "Heavy cream", "amount": "100", "unit": "ml" },
+        { "name": "Fresh basil leaves", "amount": "15" },
+        { "name": "Fresh thyme sprigs", "amount": "4" },
+        { "name": "Smoked paprika", "amount": "1", "unit": "tsp" },
+        { "name": "Red chili flakes", "amount": "0.5", "unit": "tsp" },
+        { "name": "Balsamic vinegar", "amount": "1", "unit": "tbsp" },
+        { "name": "Salt" },
+        { "name": "Black pepper" },
+        { "name": "Butter", "amount": "2", "unit": "tbsp" },
+        { "name": "Crème fraîche for serving" }
+      ],
+      "execution": [
+        "Preheat oven to 220°C — hotter for more caramelization.",
+        "Halve tomatoes and bell peppers. Place cut-side down on sheet pans.",
+        "Cut top off garlic head, drizzle with oil, wrap in foil.",
+        "Quarter the onion and add to pans. Drizzle everything with olive oil.",
+        "Roast for 50 minutes until edges are deeply charred.",
+        "Squeeze roasted garlic out of skins into a large pot. Add all roasted vegetables.",
+        "Add stock, thyme sprigs, and smoked paprika. Simmer for 15 minutes.",
+        "Remove thyme stems. Blend until silky smooth.",
+        "Stir in cream, butter, balsamic vinegar, and chili flakes.",
+        "Season to taste — the roasted peppers add enough sweetness, no sugar needed.",
+        "Serve with a swirl of crème fraîche and torn basil."
+      ],
+      "changelog": "Higher oven temp (220°C) for deeper caramelization. Added roasted red bell peppers and a whole head of roasted garlic. Replaced sugar with balsamic vinegar for acidity balance. Added smoked paprika and chili flakes for warmth. Fresh thyme in the simmer. Slightly less cream, more vegetable intensity.",
+      "notes": "This is the one. The roasted red peppers add incredible sweetness and body — sugar is completely unnecessary now. The smoked paprika gives it a subtle smokiness that ties everything together. The balsamic adds complexity without being identifiable. Higher roasting temp was key — those charred edges add so much flavor. The crème fraîche swirl on top is both beautiful and adds a tangy contrast. Only thing I might try: adding roasted fennel for an anise note.",
+      "pairings": ["Grilled cheese with gruyère", "Sourdough croutons", "Crispy bacon bits"]
+    }
+  ]
+}
