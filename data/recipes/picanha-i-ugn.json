@@ -1,0 +1,73 @@
+{
+  "id": "picanha-i-ugn",
+  "title": "Picanha i Ugn",
+  "description": "Brasiliansk picanha tillagad i ugn — saftig nötkött med perfekt fettkant, inspirerad av churrasco-traditionen.",
+  "tags": ["beef", "oven", "brazilian"],
+  "difficulty": "medium",
+  "images": {},
+  "versions": [
+    {
+      "version": 1,
+      "date": "2025-09-10",
+      "rating": 5.0,
+      "prepTime": 15,
+      "cookTime": 80,
+      "servings": 4,
+      "temperature": {
+        "grill": "130°C",
+        "internalTarget": "55°C"
+      },
+      "equipment": ["Ugn", "Stektermometer", "Stekpanna", "Grill"],
+      "ingredients": [
+        { "name": "Picanha", "amount": "1.2", "unit": "kg" },
+        { "name": "Grovt salt", "amount": "2", "unit": "tbsp" },
+        { "name": "Svartpeppar", "amount": "1", "unit": "tbsp" }
+      ],
+      "execution": [
+        "Låt köttet komma till rumstemperatur.",
+        "Rista fettsidan i ett rutmönster med vass kniv.",
+        "Krydda generöst med salt och peppar.",
+        "Sätt in i ugn på 130°C med stektermometer.",
+        "Ta ut vid 55°C innertemperatur, ca 1 timme.",
+        "Bryn i het stekpanna på alla sidor.",
+        "Avsluta snabbt på het grill för rökig yta.",
+        "Vira in köttet i folie i 20 minuter.",
+        "Skiva mot fibrerna och servera."
+      ],
+      "notes": "Ojämnt tillagad — fettsidan var bäst men övriga delar blev lite torra. Nästa gång: lägre temperatur under längre tid för jämnare resultat. Använd galler i ugnen så att luften cirkulerar runt köttet.",
+      "pairings": ["Chimichurri", "Ris", "Farofa", "Sallad"]
+    },
+    {
+      "version": 2,
+      "date": "2025-11-22",
+      "rating": 7.0,
+      "prepTime": 15,
+      "cookTime": 200,
+      "servings": 4,
+      "temperature": {
+        "grill": "65°C",
+        "internalTarget": "56°C"
+      },
+      "equipment": ["Ugn", "Stektermometer", "Stekpanna", "Grill"],
+      "ingredients": [
+        { "name": "Picanha", "amount": "1.2", "unit": "kg" },
+        { "name": "Grovt salt", "amount": "2", "unit": "tbsp" },
+        { "name": "Svartpeppar", "amount": "1", "unit": "tbsp" }
+      ],
+      "execution": [
+        "Låt köttet komma till rumstemperatur.",
+        "Rista fettsidan i ett rutmönster med vass kniv.",
+        "Krydda generöst med salt och peppar.",
+        "Sätt in i ugn på 65°C med stektermometer.",
+        "Ta ut vid 56°C innertemperatur, ca 3 timmar.",
+        "Bryn i het stekpanna på alla sidor.",
+        "Avsluta snabbt på het grill för rökig yta.",
+        "Vila köttet i folie i 20 minuter.",
+        "Skiva mot fibrerna och servera."
+      ],
+      "changelog": "Sänkt ugnstemperatur från 130°C till 65°C och förlängd tid från 1 till 3 timmar för jämnare tillagning genom hela köttet.",
+      "notes": "Mycket jämnare resultat än V1. Köttet var rosa genom hela stycket. Fettkanten renderade bra vid bryningen. Värt den extra tiden.",
+      "pairings": ["Chimichurri", "Ris", "Farofa", "Vinägrett"]
+    }
+  ]
+}
