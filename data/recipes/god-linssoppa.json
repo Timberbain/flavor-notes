@@ -1,0 +1,47 @@
+{
+  "id": "god-linssoppa",
+  "title": "God Linssoppa",
+  "description": "En värmande och smakrik linssoppa med röda linser, krossade tomater, paprika och timjan. Enkel att laga och mättande — perfekt vardagsmat.",
+  "tags": ["soppa", "linser", "vegetarisk", "vardagsmat"],
+  "difficulty": "easy",
+  "images": {
+    "cover": "/images/recipes/god-linssoppa/cover.jpg"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "date": "2026-03-11",
+      "rating": 7.5,
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "equipment": ["Stor gryta"],
+      "ingredients": [
+        { "name": "Gul lök", "amount": "1", "unit": "st" },
+        { "name": "Olja att steka i", "amount": "1", "unit": "msk" },
+        { "name": "Vatten", "amount": "10", "unit": "dl" },
+        { "name": "Röda linser", "amount": "2", "unit": "dl" },
+        { "name": "Paprikapulver", "amount": "2", "unit": "tsk" },
+        { "name": "Lagerblad", "amount": "2", "unit": "st" },
+        { "name": "Krossade tomater", "amount": "1", "unit": "burk (400g)" },
+        { "name": "Vitlöksklyftor", "amount": "2", "unit": "st" },
+        { "name": "Rödvinsvinäger", "amount": "0.5", "unit": "msk" },
+        { "name": "Timjan", "amount": "0.5", "unit": "tsk" },
+        { "name": "Salt", "amount": "1", "unit": "tsk" },
+        { "name": "Grönsaksbuljongtärningar", "amount": "2", "unit": "st" },
+        { "name": "Kycklingbuljongtärning", "amount": "1", "unit": "st" },
+        { "name": "Basilika", "amount": "1", "unit": "tsk" }
+      ],
+      "execution": [
+        "Hacka löken och fräs i olja i en stor gryta.",
+        "Koka upp vattnet och tillsätt buljongtärningarna.",
+        "Blanda i den frästa löken, sköljda röda linser, paprikapulver, lagerblad och krossade tomater.",
+        "Låt koka i 10–15 minuter under lock.",
+        "Tillsätt pressad vitlök, rödvinsvinäger, kryddor och salt. Rör om.",
+        "Låt godgöra sig några minuter innan servering."
+      ],
+      "notes": "Första versionen — enkel och snabb. Basilikan är valfri (står inom parentes i originalet). Kan behöva mer syra eller hetta nästa gång.",
+      "pairings": ["Bröd", "Gräddfil"]
+    }
+  ]
+}
