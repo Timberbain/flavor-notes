@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#2d1a0a"/>
+  <g transform="translate(400, 220)" text-anchor="middle">
+    <!-- Fork and knife icon -->
+    <g fill="none" stroke="#c4956a" stroke-width="2" opacity="0.4" transform="translate(0, -40)">
+      <!-- Fork -->
+      <path d="M-20,-40 L-20,40 M-20,-40 L-20,-20 M-28,-40 L-28,-20 Q-28,-10 -20,-10 M-12,-40 L-12,-20 Q-12,-10 -20,-10"/>
+      <!-- Knife -->
+      <path d="M20,-40 L20,40 M20,-40 Q30,-35 30,-15 Q30,-5 20,-5"/>
+    </g>
+  </g>
+  <text x="400" y="300" font-family="Georgia, serif" font-size="24" fill="#c4956a" text-anchor="middle" opacity="0.5">No image yet</text>
+</svg>

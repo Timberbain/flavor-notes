@@ -1,15 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import SpotlightCard from "@/components/SpotlightCard";
 import { RecipeSummary } from "@/lib/types";
+
+const PLACEHOLDER = "/images/placeholder.svg";
 
 interface RecipeCardProps {
   recipe: RecipeSummary;
 }
 
 export default function RecipeCard({ recipe }: RecipeCardProps) {
+  const [src, setSrc] = useState(recipe.coverImage || PLACEHOLDER);
+
   return (
     <Link href={`/recipe/${recipe.id}`} className="block group">
       <SpotlightCard
@@ -18,21 +23,14 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
       >
         <div className="relative aspect-[16/10] overflow-hidden rounded-t-xl">
           <Image
-            src={recipe.coverImage}
+            src={src}
             alt={recipe.title}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.style.display = "none";
-            }}
+            onError={() => setSrc(PLACEHOLDER)}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-transparent to-transparent" />
-          {/* Fallback when image fails */}
-          <div className="absolute inset-0 flex items-center justify-center bg-muted -z-10">
-            <span className="font-serif text-xl text-muted-foreground">{recipe.title}</span>
-          </div>
         </div>
         <div className="p-4 space-y-3">
           <h2 className="font-serif text-xl text-foreground group-hover:text-accent transition-colors">
