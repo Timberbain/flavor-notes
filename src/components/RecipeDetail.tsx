@@ -36,7 +36,7 @@ export default function RecipeDetail({ recipe, version, isLatest, translations: 
         </div>
       )}
 
-      <RecipeHeader title={recipe.title} coverImage={recipe.images.cover} />
+      <RecipeHeader title={recipe.title} coverImage={recipe.images?.cover ?? "/images/placeholder.svg"} />
 
       <ScrollReveal>
         <MetadataBar

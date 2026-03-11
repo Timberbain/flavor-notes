@@ -15,7 +15,7 @@ export default function HomePage() {
       description: recipe.description,
       tags: recipe.tags,
       difficulty: recipe.difficulty,
-      coverImage: recipe.images.cover,
+      coverImage: recipe.images?.cover ?? "/images/placeholder.svg",
       latestRating: latest.rating,
       latestDate: latest.date,
       latestVersion: latest.version,

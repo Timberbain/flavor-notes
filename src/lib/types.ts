@@ -4,7 +4,7 @@ export interface Recipe {
   description: string;
   tags: string[];
   difficulty: "easy" | "medium" | "hard";
-  images: {
+  images?: {
     cover: string;
   };
   hidden?: boolean;

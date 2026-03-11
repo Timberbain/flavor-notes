@@ -1,0 +1,32 @@
+{
+  "id": "brunsas",
+  "title": "Brunsås",
+  "description": "Enkel brunsås med oxfond, soja, grädde och köttbuljong. Tjocknar fint med majzena.",
+  "tags": ["julmat"],
+  "difficulty": "easy",
+  "versions": [
+    {
+      "version": 1,
+      "date": "2026-03-11",
+      "rating": 7.0,
+      "prepTime": 5,
+      "cookTime": 15,
+      "servings": 4,
+      "ingredients": [
+        { "name": "Lök", "amount": "1", "unit": "st" },
+        { "name": "Köttbuljong", "amount": "2-3", "unit": "tärningar" },
+        { "name": "Oxfond" },
+        { "name": "Soja sås" },
+        { "name": "Grädde", "amount": "2.5", "unit": "dl" },
+        { "name": "Majzena" }
+      ],
+      "execution": [
+        "Koka upp en lök.",
+        "Lös upp 2–3 köttbuljongtärningar.",
+        "Tillsätt oxfond, soja sås och grädde (2,5 dl).",
+        "Rör ut majzena i lite kallt vatten och tillsätt för att tjockna såsen."
+      ],
+      "notes": "Handskrivet recept. Använd majzena för att reglera tjockleken."
+    }
+  ]
+}
