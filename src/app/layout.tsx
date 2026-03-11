@@ -16,9 +16,22 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://flavor.brandvik.se";
+
 export const metadata: Metadata = {
   title: "Flavor Notes",
   description: "Personal recipe versioning — track how your recipes evolve over time",
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    title: "Flavor Notes",
+    description: "Personal recipe versioning — track how your recipes evolve over time",
+    siteName: "Flavor Notes",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default async function RootLayout({
