@@ -22,9 +22,16 @@ export function getAllRecipes(): Recipe[] {
 }
 
 export function getRecipeBySlug(slug: string): Recipe | null {
-  const filePath = path.join(recipesDir, `${slug}.json`);
-  if (!fs.existsSync(filePath)) return null;
+  // Only allow lowercase alphanumeric and hyphens
+  if (!/^[a-z0-9-]+$/.test(slug)) return null;
 
+  const filePath = path.join(recipesDir, `${slug}.json`);
+
+  // Defense in depth: ensure resolved path stays within recipes dir
+  const resolved = path.resolve(filePath);
+  if (!resolved.startsWith(path.resolve(recipesDir))) return null;
+
+  if (!fs.existsSync(filePath)) return null;
   const content = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(content) as Recipe;
 }

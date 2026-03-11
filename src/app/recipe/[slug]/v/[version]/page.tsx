@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: VersionPageProps): Promise<Me
   const recipe = getRecipeBySlug(slug);
   if (!recipe) return {};
 
-  const versionNum = parseInt(versionStr, 10);
-  if (isNaN(versionNum) || versionNum <= 0) return {};
+  const versionNum = Number(versionStr);
+  if (!Number.isInteger(versionNum) || versionNum <= 0 || versionNum > 1000) return {};
 
   const version = getVersion(recipe, versionNum);
   if (!version) return {};
@@ -47,8 +47,8 @@ export default async function VersionPage({ params }: VersionPageProps) {
   const recipe = getRecipeBySlug(slug);
   if (!recipe) notFound();
 
-  const versionNum = parseInt(versionStr, 10);
-  if (isNaN(versionNum) || versionNum <= 0) notFound();
+  const versionNum = Number(versionStr);
+  if (!Number.isInteger(versionNum) || versionNum <= 0 || versionNum > 1000) notFound();
 
   const version = getVersion(recipe, versionNum);
   if (!version) notFound();
