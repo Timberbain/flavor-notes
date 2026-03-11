@@ -14,7 +14,7 @@ export function getAllRecipes(): Recipe[] {
   });
 
   // Sort by newest version date descending
-  return recipes.sort((a, b) => {
+  return recipes.filter((r) => !r.hidden).sort((a, b) => {
     const dateA = getLatestVersion(a).date;
     const dateB = getLatestVersion(b).date;
     return dateB.localeCompare(dateA);

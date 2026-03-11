@@ -7,6 +7,7 @@ export interface Recipe {
   images: {
     cover: string;
   };
+  hidden?: boolean;
   versions: RecipeVersion[];
 }
 

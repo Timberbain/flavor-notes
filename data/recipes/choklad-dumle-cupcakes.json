@@ -1,0 +1,50 @@
+{
+  "id": "choklad-dumle-cupcakes",
+  "title": "Choklad- & Dumle-cupcakes med hallonfrosting",
+  "description": "Otroligt saftiga chokladmuffins med dumle i. Toppa med enkel hallonfrosting och du har världens godaste fika!",
+  "tags": ["baking", "chocolate", "dessert", "swedish"],
+  "difficulty": "easy",
+  "images": {
+    "cover": ""
+  },
+  "versions": [
+    {
+      "version": 1,
+      "date": "2026-03-11",
+      "rating": 8.0,
+      "prepTime": 20,
+      "cookTime": 18,
+      "servings": 12,
+      "temperature": {
+        "oven": "180°C"
+      },
+      "equipment": ["Muffinsplåt", "Muffinsformar", "Spritspåse"],
+      "ingredients": [
+        { "name": "Ägg", "amount": "2" },
+        { "name": "Strösocker", "amount": "2", "unit": "dl" },
+        { "name": "Smör", "amount": "100", "unit": "g" },
+        { "name": "Mjölk", "amount": "1", "unit": "dl" },
+        { "name": "Vetemjöl", "amount": "3", "unit": "dl" },
+        { "name": "Bakpulver", "amount": "2", "unit": "tsk" },
+        { "name": "Vaniljsocker", "amount": "2", "unit": "msk" },
+        { "name": "Kakao", "amount": "1", "unit": "dl" },
+        { "name": "Dumlekola" },
+        { "name": "Färskost (hallonfrosting)", "amount": "2", "unit": "dl" },
+        { "name": "Florsocker (hallonfrosting)", "amount": "1.5", "unit": "dl" },
+        { "name": "Hallon (hallonfrosting)", "amount": "0.5", "unit": "dl" }
+      ],
+      "execution": [
+        "Sätt ugnen på 180 grader.",
+        "Vispa ägg och socker fluffigt.",
+        "Smält smöret och blanda i mjölken. Tillsätt mjölkblandningen i äggsmeten.",
+        "Blanda de torra ingredienserna i en bunke. Sikta ned mjölblandningen i ägg- och mjölkblandningen. Vänd runt till alla klumpar försvunnit.",
+        "Klicka ut smeten med hjälp av en sked i muffinsformar. Använd gärna en muffinsplåt om du har.",
+        "Grädda mitt i ugnen i ca 9 minuter. Ploppa sedan ner ett par dumle i varje form och grädda cirka 6–9 minuter till.",
+        "Låt svalna i kylskåp.",
+        "Passera hallonen och blanda med färskost och florsocker. Fyll en spritspåse och dekorera dina kalla muffins."
+      ],
+      "notes": "Recept av Caroline Ahlqvist, Köket.se. Första försöket — följde originalreceptet rakt av.",
+      "pairings": ["Kaffe", "Te"]
+    }
+  ]
+}
