@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: VersionPageProps): Promise<Me
 
   const title = `${recipe.title} (v${version.version}) — Flavor Notes`;
   const description = recipe.description || `${recipe.title} recipe`;
-  const image = recipe.images?.cover ?? "/images/placeholder.svg";
+  const image = recipe.images?.cover || "/images/og-default.png";
 
   return {
     title,
