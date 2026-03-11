@@ -36,7 +36,7 @@ export default function RecipeDetail({ recipe, version, isLatest, translations: 
         </div>
       )}
 
-      <RecipeHeader title={recipe.title} coverImage={recipe.images?.cover ?? "/images/placeholder.svg"} />
+      <RecipeHeader title={recipe.title} description={recipe.description} coverImage={recipe.images?.cover ?? "/images/placeholder.svg"} />
 
       <ScrollReveal>
         <MetadataBar
@@ -50,6 +50,16 @@ export default function RecipeDetail({ recipe, version, isLatest, translations: 
           tags={recipe.tags}
         />
       </ScrollReveal>
+
+      {recipe.remark && (
+        <ScrollReveal delay={0.05}>
+          <div className="border-l-2 border-accent/40 bg-surface/50 rounded-r-lg pl-6 pr-4 py-4">
+            <p className="font-serif text-lg italic leading-relaxed text-foreground/90">
+              {recipe.remark}
+            </p>
+          </div>
+        </ScrollReveal>
+      )}
 
       {/* Conditional sections: temperature, equipment, weather */}
       {(version.temperature || version.equipment || version.weather) && (

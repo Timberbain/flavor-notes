@@ -2,16 +2,18 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import SplitText from "@/components/SplitText";
 
 const PLACEHOLDER = "/images/placeholder.svg";
 
 interface RecipeHeaderProps {
   title: string;
+  description: string;
   coverImage: string;
 }
 
-export default function RecipeHeader({ title, coverImage }: RecipeHeaderProps) {
+export default function RecipeHeader({ title, description, coverImage }: RecipeHeaderProps) {
   const [src, setSrc] = useState(coverImage || PLACEHOLDER);
 
   return (
@@ -37,6 +39,14 @@ export default function RecipeHeader({ title, coverImage }: RecipeHeaderProps) {
           rootMargin="0px"
           threshold={0}
         />
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.0, ease: "easeOut" }}
+          className="font-serif italic text-base md:text-lg text-muted-foreground drop-shadow-md mt-2"
+        >
+          {description}
+        </motion.p>
       </div>
     </div>
   );

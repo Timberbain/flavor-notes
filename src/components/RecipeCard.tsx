@@ -40,6 +40,9 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
           <h2 className="font-serif text-xl text-foreground group-hover:text-accent transition-colors">
             {recipe.title}
           </h2>
+          <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+            {recipe.description}
+          </p>
           <div className="flex items-center gap-3 text-sm">
             <span className="text-accent font-semibold">{recipe.latestRating.toFixed(1)}/10</span>
             <span className="text-muted-foreground">v{recipe.latestVersion}</span>
