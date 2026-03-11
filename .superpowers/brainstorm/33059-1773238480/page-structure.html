@@ -1,0 +1,101 @@
+<h2>Page Structure: Recipe Detail View</h2>
+<p class="subtitle">How should the recipe detail page be laid out? This is where you'll spend most of your time.</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px; background: linear-gradient(135deg, #1c1107, #2d1a0a);">
+      <div style="font-family: Georgia, serif; color: #e8d5b7; font-size: 10px;">
+        <!-- Hero image -->
+        <div style="height: 50px; background: linear-gradient(135deg, rgba(196,149,106,0.3), rgba(139,69,19,0.2)); border-radius: 6px; margin-bottom: 8px; display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 16px; color: #c4956a;">Smoked Brisket</span>
+        </div>
+        <!-- Metadata bar -->
+        <div style="display: flex; gap: 12px; margin-bottom: 8px; font-size: 9px; color: #c4956a;">
+          <span>v3</span><span>9.2/10</span><span>12h cook</span><span>12 servings</span>
+        </div>
+        <!-- Two column -->
+        <div style="display: flex; gap: 8px;">
+          <!-- Left: Content -->
+          <div style="flex: 2;">
+            <div style="background: rgba(196,149,106,0.08); border: 1px solid rgba(196,149,106,0.15); border-radius: 4px; padding: 6px; margin-bottom: 6px;">
+              <div style="color: #c4956a; font-size: 8px; margin-bottom: 3px;">INGREDIENTS</div>
+              <div style="font-size: 8px; opacity: 0.7; line-height: 1.5;">Beef brisket 5kg<br>Black pepper 3tbsp<br>Kosher salt 2tbsp</div>
+            </div>
+            <div style="background: rgba(196,149,106,0.08); border: 1px solid rgba(196,149,106,0.15); border-radius: 4px; padding: 6px;">
+              <div style="color: #c4956a; font-size: 8px; margin-bottom: 3px;">METHOD</div>
+              <div style="font-size: 8px; opacity: 0.7; line-height: 1.5;">1. Trim brisket...<br>2. Apply rub...<br>3. Smoke at 225F...</div>
+            </div>
+          </div>
+          <!-- Right: Timeline -->
+          <div style="flex: 1; background: rgba(196,149,106,0.08); border: 1px solid rgba(196,149,106,0.15); border-radius: 4px; padding: 6px;">
+            <div style="color: #c4956a; font-size: 8px; margin-bottom: 6px;">EVOLUTION</div>
+            <div style="border-left: 2px solid rgba(196,149,106,0.3); padding-left: 6px;">
+              <div style="margin-bottom: 6px;">
+                <div style="width: 6px; height: 6px; background: #c4956a; border-radius: 50%; margin-left: -9px; margin-bottom: 2px;"></div>
+                <span style="color: #c4956a;">v3</span><br><span style="opacity: 0.5; font-size: 8px;">Added wrap</span>
+              </div>
+              <div style="margin-bottom: 6px;">
+                <div style="width: 6px; height: 6px; background: rgba(196,149,106,0.4); border-radius: 50%; margin-left: -9px; margin-bottom: 2px;"></div>
+                <span style="opacity: 0.6;">v2</span><br><span style="opacity: 0.4; font-size: 8px;">New rub mix</span>
+              </div>
+              <div>
+                <div style="width: 6px; height: 6px; background: rgba(196,149,106,0.2); border-radius: 50%; margin-left: -9px; margin-bottom: 2px;"></div>
+                <span style="opacity: 0.4;">v1</span><br><span style="opacity: 0.3; font-size: 8px;">First attempt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: Side Timeline</h3>
+      <p>Recipe content on the left (2/3), version timeline pinned on the right (1/3). Click a timeline node to load that version's data into the left panel. Timeline always visible.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px; background: linear-gradient(135deg, #1c1107, #2d1a0a);">
+      <div style="font-family: Georgia, serif; color: #e8d5b7; font-size: 10px;">
+        <!-- Hero image -->
+        <div style="height: 40px; background: linear-gradient(135deg, rgba(196,149,106,0.3), rgba(139,69,19,0.2)); border-radius: 6px; margin-bottom: 6px; display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 14px; color: #c4956a;">Smoked Brisket</span>
+        </div>
+        <!-- Full width content sections -->
+        <div style="background: rgba(196,149,106,0.08); border: 1px solid rgba(196,149,106,0.15); border-radius: 4px; padding: 6px; margin-bottom: 4px;">
+          <div style="display: flex; gap: 8px;">
+            <div style="flex:1;"><span style="color: #c4956a; font-size: 8px;">INGREDIENTS</span><br><span style="opacity:0.6; font-size:8px;">Brisket, pepper, salt...</span></div>
+            <div style="flex:1;"><span style="color: #c4956a; font-size: 8px;">METHOD</span><br><span style="opacity:0.6; font-size:8px;">Trim, rub, smoke...</span></div>
+          </div>
+        </div>
+        <!-- Horizontal timeline -->
+        <div style="background: rgba(196,149,106,0.08); border: 1px solid rgba(196,149,106,0.15); border-radius: 4px; padding: 8px; margin-bottom: 4px;">
+          <div style="color: #c4956a; font-size: 8px; margin-bottom: 6px;">RECIPE EVOLUTION</div>
+          <div style="display: flex; align-items: center; gap: 4px; position: relative;">
+            <div style="position: absolute; top: 50%; left: 10px; right: 10px; height: 2px; background: rgba(196,149,106,0.2);"></div>
+            <div style="text-align: center; flex: 1; position: relative;">
+              <div style="width: 10px; height: 10px; background: rgba(196,149,106,0.2); border-radius: 50%; margin: 0 auto 3px;"></div>
+              <div style="font-size: 8px; opacity: 0.4;">v1</div>
+            </div>
+            <div style="text-align: center; flex: 1; position: relative;">
+              <div style="width: 10px; height: 10px; background: rgba(196,149,106,0.4); border-radius: 50%; margin: 0 auto 3px;"></div>
+              <div style="font-size: 8px; opacity: 0.6;">v2</div>
+            </div>
+            <div style="text-align: center; flex: 1; position: relative;">
+              <div style="width: 12px; height: 12px; background: #c4956a; border-radius: 50%; margin: 0 auto 3px; border: 2px solid #1c1107;"></div>
+              <div style="font-size: 8px; color: #c4956a;">v3</div>
+            </div>
+          </div>
+        </div>
+        <!-- Changelog -->
+        <div style="background: rgba(196,149,106,0.08); border: 1px solid rgba(196,149,106,0.15); border-radius: 4px; padding: 6px;">
+          <div style="color: #c4956a; font-size: 8px;">CHANGELOG</div>
+          <div style="opacity: 0.6; font-size: 8px;">Added butcher paper wrap...</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: Full Width + Horizontal Timeline</h3>
+      <p>Everything full-width in a scrollable page. Horizontal timeline bar between the recipe content and the changelog/notes. Click a version node to switch. Clean single-column reading.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,137 @@
+<h2>App Layout: How should Flavor Notes be structured?</h2>
+<p class="subtitle">Pick the overall page structure that feels right for browsing and reading recipes</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: linear-gradient(135deg, #1a1a2e, #16213e);">
+      <div style="display: flex; height: 200px; gap: 8px; font-family: monospace; font-size: 11px; color: #ccc;">
+        <!-- Sidebar -->
+        <div style="width: 220px; background: rgba(255,140,50,0.1); border: 1px solid rgba(255,140,50,0.3); border-radius: 8px; padding: 12px;">
+          <div style="color: #ff8c32; font-weight: bold; font-size: 13px; margin-bottom: 12px;">Flavor Notes</div>
+          <div style="padding: 6px 8px; background: rgba(255,140,50,0.2); border-radius: 4px; margin-bottom: 4px;">Smoked Brisket</div>
+          <div style="padding: 6px 8px; opacity: 0.6;">Beer Can Chicken</div>
+          <div style="padding: 6px 8px; opacity: 0.6;">Pulled Pork</div>
+          <div style="padding: 6px 8px; opacity: 0.6;">Grilled Salmon</div>
+          <div style="padding: 6px 8px; opacity: 0.6;">Chimichurri</div>
+        </div>
+        <!-- Main content -->
+        <div style="flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px;">
+          <div style="font-size: 16px; color: #ff8c32; margin-bottom: 8px;">Smoked Brisket</div>
+          <div style="font-size: 10px; opacity: 0.5; margin-bottom: 12px;">v3 - Jul 2025</div>
+          <div style="display: flex; gap: 8px; height: 60%;">
+            <div style="flex: 2; background: rgba(255,255,255,0.05); border-radius: 4px; padding: 8px;">
+              <div style="font-size: 9px; color: #ff8c32; margin-bottom: 4px;">INGREDIENTS</div>
+              <div style="font-size: 9px; opacity: 0.5; line-height: 1.6;">Beef brisket 5kg<br>Salt &amp; pepper rub<br>Oak wood chips<br>Apple cider vinegar</div>
+            </div>
+            <div style="flex: 1; background: rgba(255,255,255,0.05); border-radius: 4px; padding: 8px;">
+              <div style="font-size: 9px; color: #ff8c32; margin-bottom: 4px;">TIMELINE</div>
+              <div style="border-left: 2px solid rgba(255,140,50,0.4); padding-left: 8px; font-size: 9px;">
+                <div style="margin-bottom: 8px;"><span style="color: #ff8c32;">v3</span><br><span style="opacity:0.5;">Added wrap</span></div>
+                <div style="margin-bottom: 8px;"><span style="color: #ff8c32;">v2</span><br><span style="opacity:0.5;">New rub</span></div>
+                <div><span style="color: #ff8c32;">v1</span><br><span style="opacity:0.5;">First try</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: Sidebar + Detail</h3>
+      <p>Persistent sidebar with recipe list on the left. Click a recipe to see its full detail with embedded timeline on the right. Always one click away from any recipe.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: linear-gradient(135deg, #1a1a2e, #16213e);">
+      <div style="height: 200px; font-family: monospace; font-size: 11px; color: #ccc;">
+        <!-- Top nav -->
+        <div style="display: flex; align-items: center; padding: 8px 12px; background: rgba(255,140,50,0.1); border: 1px solid rgba(255,140,50,0.3); border-radius: 8px 8px 0 0; gap: 16px;">
+          <span style="color: #ff8c32; font-weight: bold;">Flavor Notes</span>
+          <span style="opacity: 0.6; font-size: 10px;">All Recipes</span>
+          <span style="opacity: 0.6; font-size: 10px;">Tags</span>
+          <span style="opacity: 0.6; font-size: 10px;">Favorites</span>
+        </div>
+        <!-- Grid -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 0 0 8px 8px;">
+          <div style="background: rgba(255,140,50,0.15); border-radius: 6px; padding: 10px;">
+            <div style="height: 40px; background: rgba(255,140,50,0.2); border-radius: 4px; margin-bottom: 6px;"></div>
+            <div style="font-size: 10px; color: #ff8c32;">Smoked Brisket</div>
+            <div style="font-size: 8px; opacity: 0.5;">v3 - 9.2/10</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border-radius: 6px; padding: 10px;">
+            <div style="height: 40px; background: rgba(255,255,255,0.05); border-radius: 4px; margin-bottom: 6px;"></div>
+            <div style="font-size: 10px;">Beer Can Chicken</div>
+            <div style="font-size: 8px; opacity: 0.5;">v2 - 8.5/10</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border-radius: 6px; padding: 10px;">
+            <div style="height: 40px; background: rgba(255,255,255,0.05); border-radius: 4px; margin-bottom: 6px;"></div>
+            <div style="font-size: 10px;">Pulled Pork</div>
+            <div style="font-size: 8px; opacity: 0.5;">v5 - 9.0/10</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border-radius: 6px; padding: 10px;">
+            <div style="height: 40px; background: rgba(255,255,255,0.05); border-radius: 4px; margin-bottom: 6px;"></div>
+            <div style="font-size: 10px;">Grilled Salmon</div>
+            <div style="font-size: 8px; opacity: 0.5;">v1 - 7.0/10</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border-radius: 6px; padding: 10px;">
+            <div style="height: 40px; background: rgba(255,255,255,0.05); border-radius: 4px; margin-bottom: 6px;"></div>
+            <div style="font-size: 10px;">Chimichurri</div>
+            <div style="font-size: 8px; opacity: 0.5;">v3 - 8.8/10</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border-radius: 6px; padding: 10px;">
+            <div style="height: 40px; background: rgba(255,255,255,0.05); border-radius: 4px; margin-bottom: 6px;"></div>
+            <div style="font-size: 10px;">Dry Rub Ribs</div>
+            <div style="font-size: 8px; opacity: 0.5;">v4 - 9.5/10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: Card Grid + Full Page Detail</h3>
+      <p>Homepage shows all recipes as visual cards in a grid. Click a card to navigate to a full-page recipe view with the timeline as a dedicated section. Great for browsing.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: linear-gradient(135deg, #1a1a2e, #16213e);">
+      <div style="height: 200px; font-family: monospace; font-size: 11px; color: #ccc;">
+        <!-- Hero header -->
+        <div style="text-align: center; padding: 12px; background: linear-gradient(135deg, rgba(255,140,50,0.2), rgba(200,80,20,0.1)); border-radius: 8px 8px 0 0;">
+          <div style="color: #ff8c32; font-weight: bold; font-size: 14px;">Flavor Notes</div>
+          <div style="font-size: 9px; opacity: 0.5;">Recipe experiments & evolution</div>
+        </div>
+        <!-- Scrollable list -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 0 0 8px 8px; padding: 8px;">
+          <div style="display: flex; align-items: center; padding: 10px; background: rgba(255,140,50,0.1); border-radius: 6px; margin-bottom: 6px; gap: 12px;">
+            <div style="width: 50px; height: 50px; background: rgba(255,140,50,0.2); border-radius: 6px;"></div>
+            <div style="flex:1;">
+              <div style="color: #ff8c32; font-size: 11px;">Smoked Brisket</div>
+              <div style="font-size: 9px; opacity: 0.5;">v3 - "Finally nailed the bark"</div>
+            </div>
+            <div style="font-size: 14px; color: #ff8c32;">9.2</div>
+          </div>
+          <div style="display: flex; align-items: center; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 6px; margin-bottom: 6px; gap: 12px;">
+            <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.05); border-radius: 6px;"></div>
+            <div style="flex:1;">
+              <div style="font-size: 11px;">Beer Can Chicken</div>
+              <div style="font-size: 9px; opacity: 0.5;">v2 - "Better brine ratio"</div>
+            </div>
+            <div style="font-size: 14px; opacity: 0.5;">8.5</div>
+          </div>
+          <div style="display: flex; align-items: center; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 6px; gap: 12px;">
+            <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.05); border-radius: 6px;"></div>
+            <div style="flex:1;">
+              <div style="font-size: 11px;">Pulled Pork</div>
+              <div style="font-size: 9px; opacity: 0.5;">v5 - "Added mustard base"</div>
+            </div>
+            <div style="font-size: 14px; opacity: 0.5;">9.0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C: Magazine/Blog Style</h3>
+      <p>Single-column scrollable layout like a food blog. Recipes listed with hero images and latest notes. Clean, focused reading. Timeline appears inline when viewing a recipe.</p>
+    </div>
+  </div>
+</div>
