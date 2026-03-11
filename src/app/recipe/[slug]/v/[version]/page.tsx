@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getRecipeBySlug, getLatestVersion, getVersion } from "@/lib/recipes";
+import { getLocale, getTranslations } from "@/lib/i18n";
 import RecipeDetail from "@/components/RecipeDetail";
 
 interface VersionPageProps {
@@ -19,6 +20,8 @@ export default async function VersionPage({ params }: VersionPageProps) {
 
   const latest = getLatestVersion(recipe);
   const isLatest = version.version === latest.version;
+  const locale = await getLocale();
+  const translations = getTranslations(locale);
 
-  return <RecipeDetail recipe={recipe} version={version} isLatest={isLatest} />;
+  return <RecipeDetail recipe={recipe} version={version} isLatest={isLatest} translations={translations} />;
 }

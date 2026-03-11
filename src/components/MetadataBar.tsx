@@ -1,6 +1,7 @@
 "use client";
 
 import Counter from "@/components/Counter";
+import { useTranslations } from "./I18nProvider";
 
 interface MetadataBarProps {
   version: number;
@@ -13,13 +14,6 @@ interface MetadataBarProps {
   tags: string[];
 }
 
-function formatTime(minutes: number): string {
-  if (minutes < 60) return `${minutes}m`;
-  const h = Math.floor(minutes / 60);
-  const m = minutes % 60;
-  return m > 0 ? `${h}h ${m}m` : `${h}h`;
-}
-
 export default function MetadataBar({
   version,
   totalVersions,
@@ -30,6 +24,17 @@ export default function MetadataBar({
   difficulty,
   tags,
 }: MetadataBarProps) {
+  const t = useTranslations();
+
+  const formatTime = (minutes: number): string => {
+    if (minutes < 60) return `${minutes}${t.time.minutes}`;
+    const h = Math.floor(minutes / 60);
+    const m = minutes % 60;
+    return m > 0 ? `${h}${t.time.hours} ${m}${t.time.minutes}` : `${h}${t.time.hours}`;
+  };
+
+  const difficultyLabel = t.difficulty[difficulty];
+
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-4">
@@ -50,7 +55,7 @@ export default function MetadataBar({
             gradientFrom="transparent"
             gradientTo="transparent"
           />
-          <span className="text-accent font-bold text-xl">/10</span>
+          <span className="text-accent font-bold text-xl">{t.metadata.ratingOf}</span>
         </div>
 
         <span className={`px-2 py-0.5 rounded text-xs font-medium ${
@@ -60,21 +65,21 @@ export default function MetadataBar({
             ? "bg-yellow-900/30 text-yellow-400"
             : "bg-red-900/30 text-red-400"
         }`}>
-          {difficulty}
+          {difficultyLabel}
         </span>
       </div>
 
       <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
         <div className="flex items-center gap-1.5">
-          <span className="text-accent text-xs uppercase tracking-wider font-medium">Prep</span>
+          <span className="text-accent text-xs uppercase tracking-wider font-medium">{t.metadata.prep}</span>
           <span>{formatTime(prepTime)}</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <span className="text-accent text-xs uppercase tracking-wider font-medium">Cook</span>
+          <span className="text-accent text-xs uppercase tracking-wider font-medium">{t.metadata.cook}</span>
           <span>{formatTime(cookTime)}</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <span className="text-accent text-xs uppercase tracking-wider font-medium">Servings</span>
+          <span className="text-accent text-xs uppercase tracking-wider font-medium">{t.metadata.servings}</span>
           <span>{servings}</span>
         </div>
       </div>

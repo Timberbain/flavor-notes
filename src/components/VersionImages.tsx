@@ -1,15 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "./I18nProvider";
 
 interface VersionImagesProps {
   images: string[];
 }
 
 export default function VersionImages({ images }: VersionImagesProps) {
+  const t = useTranslations();
+
   return (
     <div>
-      <h2 className="font-serif text-2xl text-accent mb-3">Photos</h2>
+      <h2 className="font-serif text-2xl text-accent mb-3">{t.sections.photos}</h2>
       <div className="flex gap-4 overflow-x-auto pb-2">
         {images.map((src, i) => (
           <div key={i} className="relative h-[200px] w-auto shrink-0 rounded-lg overflow-hidden">

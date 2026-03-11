@@ -4,6 +4,7 @@ import { useState } from "react";
 import { RecipeSummary } from "@/lib/types";
 import RecipeCard from "./RecipeCard";
 import TagFilter from "./TagFilter";
+import { useTranslations } from "./I18nProvider";
 
 interface RecipeGridProps {
   recipes: RecipeSummary[];
@@ -12,6 +13,7 @@ interface RecipeGridProps {
 
 export default function RecipeGrid({ recipes, tags }: RecipeGridProps) {
   const [activeTags, setActiveTags] = useState<string[]>([]);
+  const t = useTranslations();
 
   const filteredRecipes =
     activeTags.length === 0
@@ -37,8 +39,8 @@ export default function RecipeGrid({ recipes, tags }: RecipeGridProps) {
 
       {filteredRecipes.length === 0 ? (
         <div className="text-center py-20">
-          <p className="font-serif text-2xl text-muted-foreground">No recipes match those filters</p>
-          <p className="text-sm text-muted-foreground mt-2">Try selecting different tags or show all recipes</p>
+          <p className="font-serif text-2xl text-muted-foreground">{t.noResults.title}</p>
+          <p className="text-sm text-muted-foreground mt-2">{t.noResults.subtitle}</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

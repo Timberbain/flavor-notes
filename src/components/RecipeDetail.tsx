@@ -1,4 +1,5 @@
 import { Recipe, RecipeVersion } from "@/lib/types";
+import { Dictionary } from "@/lib/i18n/types";
 import RecipeHeader from "./RecipeHeader";
 import MetadataBar from "./MetadataBar";
 import IngredientList from "./IngredientList";
@@ -7,15 +8,15 @@ import ChangelogSection from "./ChangelogSection";
 import ScrollReveal from "./ScrollReveal";
 import VersionImages from "./VersionImages";
 import Link from "next/link";
-import Image from "next/image";
 
 interface RecipeDetailProps {
   recipe: Recipe;
   version: RecipeVersion;
   isLatest: boolean;
+  translations: Dictionary;
 }
 
-export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetailProps) {
+export default function RecipeDetail({ recipe, version, isLatest, translations: t }: RecipeDetailProps) {
   const latestVersion = recipe.versions[recipe.versions.length - 1].version;
 
   return (
@@ -23,14 +24,14 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
       {!isLatest && (
         <div className="bg-surface border border-border rounded-lg px-4 py-3 flex items-center justify-between flex-wrap gap-2">
           <span className="text-muted-foreground">
-            Viewing version <span className="text-accent font-semibold">{version.version}</span> of{" "}
+            {t.version.viewing} <span className="text-accent font-semibold">{version.version}</span> {t.version.of}{" "}
             <span className="text-accent font-semibold">{latestVersion}</span>
           </span>
           <Link
             href={`/recipe/${recipe.id}`}
             className="text-accent hover:underline font-medium text-sm"
           >
-            View Latest
+            {t.version.viewLatest}
           </Link>
         </div>
       )}
@@ -56,26 +57,26 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {version.temperature && (
               <div className="bg-surface border border-border rounded-lg p-4">
-                <h3 className="text-accent text-xs uppercase tracking-wider font-medium mb-2">Temperature</h3>
+                <h3 className="text-accent text-xs uppercase tracking-wider font-medium mb-2">{t.sections.temperature}</h3>
                 <div className="space-y-1 text-sm">
                   {version.temperature.grill && (
-                    <div><span className="text-muted-foreground">Grill:</span> <span className="text-foreground">{version.temperature.grill}</span></div>
+                    <div><span className="text-muted-foreground">{t.temperature.grill}:</span> <span className="text-foreground">{version.temperature.grill}</span></div>
                   )}
                   {version.temperature.internalTarget && (
-                    <div><span className="text-muted-foreground">Internal:</span> <span className="text-foreground">{version.temperature.internalTarget}</span></div>
+                    <div><span className="text-muted-foreground">{t.temperature.internal}:</span> <span className="text-foreground">{version.temperature.internalTarget}</span></div>
                   )}
                   {version.temperature.oven && (
-                    <div><span className="text-muted-foreground">Oven:</span> <span className="text-foreground">{version.temperature.oven}</span></div>
+                    <div><span className="text-muted-foreground">{t.temperature.oven}:</span> <span className="text-foreground">{version.temperature.oven}</span></div>
                   )}
                   {version.temperature.stovetop && (
-                    <div><span className="text-muted-foreground">Stovetop:</span> <span className="text-foreground">{version.temperature.stovetop}</span></div>
+                    <div><span className="text-muted-foreground">{t.temperature.stovetop}:</span> <span className="text-foreground">{version.temperature.stovetop}</span></div>
                   )}
                 </div>
               </div>
             )}
             {version.equipment && (
               <div className="bg-surface border border-border rounded-lg p-4">
-                <h3 className="text-accent text-xs uppercase tracking-wider font-medium mb-2">Equipment</h3>
+                <h3 className="text-accent text-xs uppercase tracking-wider font-medium mb-2">{t.sections.equipment}</h3>
                 <ul className="space-y-1 text-sm text-foreground">
                   {version.equipment.map((item, i) => (
                     <li key={i}>{item}</li>
@@ -85,7 +86,7 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
             )}
             {version.weather && (
               <div className="bg-surface border border-border rounded-lg p-4">
-                <h3 className="text-accent text-xs uppercase tracking-wider font-medium mb-2">Weather</h3>
+                <h3 className="text-accent text-xs uppercase tracking-wider font-medium mb-2">{t.sections.weather}</h3>
                 <p className="text-sm text-foreground">{version.weather}</p>
               </div>
             )}
@@ -96,7 +97,7 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
       {/* Ingredients */}
       <ScrollReveal delay={0.1}>
         <div>
-          <h2 className="font-serif text-2xl text-accent mb-4">Ingredients</h2>
+          <h2 className="font-serif text-2xl text-accent mb-4">{t.sections.ingredients}</h2>
           <IngredientList ingredients={version.ingredients} />
         </div>
       </ScrollReveal>
@@ -104,7 +105,7 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
       {/* Method / Execution */}
       <ScrollReveal delay={0.1}>
         <div>
-          <h2 className="font-serif text-2xl text-accent mb-4">Method</h2>
+          <h2 className="font-serif text-2xl text-accent mb-4">{t.sections.method}</h2>
           <ol className="space-y-4">
             {version.execution.map((step, i) => (
               <li key={i} className="flex gap-4">
@@ -129,7 +130,7 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
       {version.pairings && version.pairings.length > 0 && (
         <ScrollReveal delay={0.1}>
           <div>
-            <h2 className="font-serif text-2xl text-accent mb-3">Pairs With</h2>
+            <h2 className="font-serif text-2xl text-accent mb-3">{t.sections.pairsWith}</h2>
             <div className="flex flex-wrap gap-2">
               {version.pairings.map((pairing, i) => (
                 <span
@@ -147,7 +148,7 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
       {/* Version Timeline */}
       <ScrollReveal delay={0.1}>
         <div>
-          <h2 className="font-serif text-2xl text-accent mb-4">Version History</h2>
+          <h2 className="font-serif text-2xl text-accent mb-4">{t.sections.versionHistory}</h2>
           <VersionTimeline
             recipeSlug={recipe.id}
             versions={recipe.versions.map((v) => ({ version: v.version, date: v.date }))}
@@ -159,7 +160,12 @@ export default function RecipeDetail({ recipe, version, isLatest }: RecipeDetail
 
       {/* Changelog & Notes */}
       <ScrollReveal delay={0.1}>
-        <ChangelogSection changelog={version.changelog} notes={version.notes} />
+        <ChangelogSection
+          changelog={version.changelog}
+          notes={version.notes}
+          whatChangedLabel={t.changelog.whatChanged}
+          notesLabel={t.changelog.notes}
+        />
       </ScrollReveal>
     </div>
   );

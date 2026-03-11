@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "./I18nProvider";
+
 interface TagFilterProps {
   tags: string[];
   activeTags: string[];
@@ -8,6 +10,8 @@ interface TagFilterProps {
 }
 
 export default function TagFilter({ tags, activeTags, onToggleTag, onReset }: TagFilterProps) {
+  const t = useTranslations();
+
   return (
     <div className="flex flex-wrap gap-2">
       <button
@@ -18,7 +22,7 @@ export default function TagFilter({ tags, activeTags, onToggleTag, onReset }: Ta
             : "bg-surface border border-border text-muted-foreground hover:text-foreground"
         }`}
       >
-        Show All
+        {t.filters.showAll}
       </button>
       {tags.map((tag) => {
         const isActive = activeTags.includes(tag);

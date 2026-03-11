@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SpotlightCard from "@/components/SpotlightCard";
 import { RecipeSummary } from "@/lib/types";
+import { useTranslations } from "./I18nProvider";
 
 const PLACEHOLDER = "/images/placeholder.svg";
 
@@ -14,6 +15,9 @@ interface RecipeCardProps {
 
 export default function RecipeCard({ recipe }: RecipeCardProps) {
   const [src, setSrc] = useState(recipe.coverImage || PLACEHOLDER);
+  const t = useTranslations();
+
+  const difficultyLabel = t.difficulty[recipe.difficulty];
 
   return (
     <Link href={`/recipe/${recipe.id}`} className="block group">
@@ -46,7 +50,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                 ? "bg-yellow-900/30 text-yellow-400"
                 : "bg-red-900/30 text-red-400"
             }`}>
-              {recipe.difficulty}
+              {difficultyLabel}
             </span>
           </div>
           <div className="flex flex-wrap gap-1.5">
