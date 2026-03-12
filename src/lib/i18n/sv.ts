@@ -6,7 +6,7 @@ export const sv: Dictionary = {
     subtitle: "Receptversioner",
   },
   footer: {
-    copyright: "© 2026 Timberbain. Alla rättigheter förbehållna.",
+    copyright: "© 2025 Timberbain. All rights reserved.",
   },
   filters: {
     showAll: "Visa alla",
