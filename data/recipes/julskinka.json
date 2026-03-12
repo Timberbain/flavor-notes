@@ -1,0 +1,37 @@
+{
+  "id": "julskinka",
+  "title": "Julskinka",
+  "description": "Svensk julskinka tillagad sous vide-style i ugn — rimmad skinka som långtillagas i låg temperatur med plasten kvar för maximalt saftig och smakrik julskinka.",
+  "tags": ["pork", "oven", "swedish", "christmas", "sous-vide"],
+  "difficulty": "easy",
+  "images": {
+    "cover": "/images/recipes/julskinka/cover.jpg"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "date": "2025-12-24",
+      "rating": 7.5,
+      "prepTime": 15,
+      "cookTime": 720,
+      "servings": 8,
+      "temperature": {
+        "oven": "70–72°C",
+        "internalTarget": "68–72°C"
+      },
+      "equipment": ["Ugn", "Stektermometer"],
+      "ingredients": [
+        { "name": "Rimmad julskinka", "amount": "3–4", "unit": "kg" }
+      ],
+      "execution": [
+        "Sätt ugnen på 70–72°C.",
+        "Behåll plasten kvar runt julskinkan.",
+        "Sätt julskinkan i ugnen i ca 12 timmar.",
+        "Kontrollera innertemperaturen med stektermometer: 68°C ger saftigare kött, 70–72°C ger klassisk julskinkesmak.",
+        "Låt skinkan vila innan servering."
+      ],
+      "notes": "Enklaste möjliga metod — plasten fungerar som vakuumpåse och håller kvar all saft. Perfekt att sätta in på kvällen och ta ut på morgonen.",
+      "pairings": ["Senap", "Julbröd", "Ärtsoppa", "Rödkål", "Inlagd gurka"]
+    }
+  ]
+}
