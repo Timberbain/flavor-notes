@@ -5,6 +5,7 @@
   "tags": ["beef", "oven", "brazilian"],
   "difficulty": "medium",
   "images": {},
+  "remark": "När grillen inte är tillgänglig har jag testat att tillaga Picanha i ugn under lång tid. Funkar helt ok, men grillad picanha är helt klart bäst.",
   "versions": [
     {
       "version": 1,
@@ -25,13 +26,13 @@
       ],
       "execution": [
         "Låt köttet komma till rumstemperatur.",
+        "Slå på ugnen på 130°C",
         "Rista fettsidan i ett rutmönster med vass kniv.",
         "Krydda generöst med salt och peppar.",
-        "Sätt in i ugn på 130°C med stektermometer.",
-        "Ta ut vid 55°C innertemperatur, ca 1 timme.",
-        "Bryn i het stekpanna på alla sidor.",
-        "Avsluta snabbt på het grill för rökig yta.",
-        "Vira in köttet i folie i 20 minuter.",
+        "Bryn i het stekpanna på alla sidor för att försegla ytorna.",
+        "Sätt in i ugn med stektermometer.",
+        "Vid 55°C innertemperatur, ca 1 timme, sätt ugnen på grill läge och grilla fettet i 1 minut så att fettet puttrar",
+        "Ta ut köttet och vira in köttet i folie i 20 minuter.",
         "Skiva mot fibrerna och servera."
       ],
       "notes": "Ojämnt tillagad — fettsidan var bäst men övriga delar blev lite torra. Nästa gång: lägre temperatur under längre tid för jämnare resultat. Använd galler i ugnen så att luften cirkulerar runt köttet.",
@@ -56,13 +57,13 @@
       ],
       "execution": [
         "Låt köttet komma till rumstemperatur.",
+        "Slå på ugnen på 65°C",
         "Rista fettsidan i ett rutmönster med vass kniv.",
         "Krydda generöst med salt och peppar.",
-        "Sätt in i ugn på 65°C med stektermometer.",
-        "Ta ut vid 56°C innertemperatur, ca 3 timmar.",
-        "Bryn i het stekpanna på alla sidor.",
-        "Avsluta snabbt på het grill för rökig yta.",
-        "Vila köttet i folie i 20 minuter.",
+        "Bryn i het stekpanna på alla sidor för att försegla ytorna.",
+        "Sätt in i ugn med stektermometer.",
+        "Vid 56°C innertemperatur, ca 3 timmar, sätt ugnen på grill läge och grilla så att fettet puttrar",
+        "Ta ut köttet och vira in köttet i folie i 20 minuter.",
         "Skiva mot fibrerna och servera."
       ],
       "changelog": "Sänkt ugnstemperatur från 130°C till 65°C och förlängd tid från 1 till 3 timmar för jämnare tillagning genom hela köttet.",

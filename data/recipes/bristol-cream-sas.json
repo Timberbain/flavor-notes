@@ -1,0 +1,39 @@
+{
+  "id": "bristol-cream-sas",
+  "title": "Bristol Cream-sås (sherrysås)",
+  "description": "Krämig sherrysås med Bristol Cream, vitlök, chili och grädde. Perfekt till kött.",
+  "tags": ["sås", "kött"],
+  "difficulty": "easy",
+  "remark": "Fick detta receptet av min gamla kollega och vän Freppa. Ursprungligen från Catarina König — en välkänd kock med recept på Elle Mat & Vin.",
+  "versions": [
+    {
+      "version": 1,
+      "date": "2026-03-12",
+      "rating": 8.5,
+      "prepTime": 5,
+      "cookTime": 30,
+      "servings": 4,
+      "temperature": {
+        "stovetop": "Medelhög värme"
+      },
+      "ingredients": [
+        { "name": "Vitlöksklyfta, finskuren", "amount": "1" },
+        { "name": "Röd chilifrukt, tunt skuren", "amount": "1", "unit": "hel" },
+        { "name": "Smör, att steka i", "amount": "1–2", "unit": "msk" },
+        { "name": "Vispgrädde 34%", "amount": "5", "unit": "dl" },
+        { "name": "Kalv- eller oxfond", "amount": "2", "unit": "msk" },
+        { "name": "Bristol Cream", "amount": "5", "unit": "msk" },
+        { "name": "Svartpeppar", "amount": "12–15", "unit": "varv" },
+        { "name": "Salt, efter smak" }
+      ],
+      "execution": [
+        "Skala vitlöken och skär i tunna skivor. Skiva även hela chilin tunt.",
+        "Lägg 1–2 msk smör i en stekpanna och bryn försiktigt på vitlök och chili. Låt fräsa försiktigt men ej brännas, ca 3 min.",
+        "Häll på grädde och fond och låt puttra samman på medelhög värme.",
+        "När såsen reducerat ner och fått en krämigare konsistens, tillsätt Bristol Cream och smaka upp med svartpeppar. Låt koka ner ytterligare tills den når den konsistens du önskar. Smaka av och salta eventuellt."
+      ],
+      "notes": "Såsen kan tillagas först och låta stå till servering. Kör du köttet i sous vide är ugnen fri för pommes. Tänk på att time:a in så att kött, sås och pommes blir färdigt på samma gång.",
+      "pairings": ["Oxfilé tournedos", "Pommes (hemgjorda eller köpta)", "Färsk timjan"]
+    }
+  ]
+}

@@ -22,11 +22,12 @@
       ],
       "execution": [
         "Koka upp en lök.",
-        "Lös upp 2–3 köttbuljongtärningar.",
+        "Lös upp 2-3 köttbuljongtärningar.",
         "Tillsätt oxfond, soja sås och grädde (2,5 dl).",
         "Rör ut majzena i lite kallt vatten och tillsätt för att tjockna såsen."
       ],
-      "notes": "Handskrivet recept. Använd majzena för att reglera tjockleken."
+      "notes": "Häll gärna i lite av fettet från ribbe efter att den har tillagats i ugnen.",
+      "pairings": ["Julribbe", "Surkål"]
     }
   ]
 }

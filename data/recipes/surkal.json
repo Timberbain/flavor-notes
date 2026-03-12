@@ -1,15 +1,15 @@
 {
   "id": "surkal",
   "title": "Surkål",
-  "description": "Klassisk svensk surkål med vitkål, smör och kummin — lagad långsamt i lager i en stor kastrull. Perfekt julmat.",
+  "description": "Klassisk norsk surkål med vitkål, smör och kummin — lagad långsamt i lager i en stor kastrull. Perfekt julmat.",
   "tags": ["julmat"],
   "difficulty": "easy",
-  "remark": "",
+  "remark": "Det här har min mor alltid serverat till Ribbe när vi äter norskt julbord",
   "versions": [
     {
       "version": 1,
       "date": "2026-03-11",
-      "rating": 7.0,
+      "rating": 8.0,
       "prepTime": 10,
       "cookTime": 120,
       "servings": 6,
@@ -26,7 +26,8 @@
         "Lägg i lager: smör, kummin och kål. Upprepa tills allt är förbrukat.",
         "Låt sjuda på låg värme i ett par timmar."
       ],
-      "notes": "Handskrivet recept — inga exakta mängder angivna. Smör, kummin och salt efter smak."
+      "notes": "Handskrivet recept — inga exakta mängder angivna. Smör, kummin och salt efter smak.",
+      "pairings": ["Julribbe", "Brunsås"]
     }
   ]
 }
