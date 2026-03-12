@@ -1,0 +1,44 @@
+{
+  "id": "norsk-julribbe",
+  "title": "Norsk Julribbe",
+  "description": "Klassisk norsk julribbe med sprött frasig svål — fläsksida som långtillagas i ugn och avslutas med grill för perfekt poppad svål.",
+  "tags": ["pork", "oven", "norwegian", "christmas"],
+  "difficulty": "medium",
+  "images": {
+    "cover": "/images/recipes/norsk-julribbe/cover.jpg"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "date": "2025-12-24",
+      "rating": 7.0,
+      "prepTime": 2880,
+      "cookTime": 180,
+      "servings": 6,
+      "temperature": {
+        "oven": "150-220°C",
+        "internalTarget": "80°C"
+      },
+      "equipment": ["Ugn", "Stektermometer", "Långpanna", "Galler", "Aluminiumfolie"],
+      "ingredients": [
+        { "name": "Fläsksida med svål", "amount": "2", "unit": "kg" },
+        { "name": "Salt" },
+        { "name": "Peppar" }
+      ],
+      "execution": [
+        "Krydda fläsksidan generöst med salt och peppar på alla sidor, inklusive svålen. Packa in helt i aluminiumfolie och lägg i kylen i 2 dagar.",
+        "Förbered en långpanna med ca 0,5 dl vatten. Lägg ribban upp och ner (svålen nedåt). Packa in allt i folie.",
+        "Sätt in i ugn på 220°C i 20 minuter.",
+        "Ta ut ribban ur ugnen och ta bort aluminiumfolien.",
+        "Vänd ribban så att svålen är uppåt och lägg på ett galler.",
+        "Bygg upp lite folie under ribban så att fettet från svålen kan rinna åt sidan.",
+        "Placera ribban nederst i ugnen.",
+        "Börja på 150°C i 30 minuter, öka till 170°C i 30 minuter, sedan 200°C tills färdig — totalt ca 2,5 timmar. Sikta på 80°C innertemperatur.",
+        "Ta bort folien under så att svålen blir jämn.",
+        "Ställ ugnen på grillläge och placera ribban längst upp. Grilla för att poppa svålen — max 1 minut. Håll noga koll så att det inte bränner vid!"
+      ],
+      "notes": "Första testet. Tvådagarssaltningen ger bra smak genom hela köttet. Grillmomentet i slutet är kritiskt — stå kvar vid ugnen och titta hela tiden.",
+      "pairings": ["Surkal", "Brunsås", "Kokt potatis", "Lingonsylt"]
+    }
+  ]
+}
