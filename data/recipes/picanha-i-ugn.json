@@ -4,12 +4,14 @@
   "description": "Brasiliansk picanha tillagad i ugn — saftig nötkött med perfekt fettkant, inspirerad av churrasco-traditionen.",
   "tags": ["beef", "oven", "brazilian"],
   "difficulty": "medium",
-  "images": {},
+  "images": {
+    "cover": "/images/recipes/picanha-i-ugn/cover.jpg"
+  },
   "remark": "När grillen inte är tillgänglig har jag testat att tillaga Picanha i ugn under lång tid. Funkar helt ok, men grillad picanha är helt klart bäst.",
   "versions": [
     {
       "version": 1,
-      "date": "2025-09-10",
+      "date": "2020-12-31",
       "rating": 5.0,
       "prepTime": 15,
       "cookTime": 80,
