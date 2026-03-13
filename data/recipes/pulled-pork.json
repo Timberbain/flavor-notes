@@ -1,7 +1,7 @@
 {
   "id": "pulled-pork",
   "title": "Pulled Pork",
-  "description": "Saftig pulled pork tillagad i crockpot — fläskkarre med hemgjord rub som långkokas i 6 timmar tills köttet faller isär.",
+  "description": "Saftig pulled pork tillagad i crockpot — fläskkarre med hemgjord rub som långkokas i 6-7 timmar tills köttet faller isär.",
   "tags": ["pork", "slow-cook", "crockpot"],
   "difficulty": "easy",
   "images": {
@@ -13,7 +13,7 @@
       "date": "2026-03-12",
       "rating": 7.0,
       "prepTime": 15,
-      "cookTime": 360,
+      "cookTime": 420,
       "servings": 6,
       "equipment": ["Crockpot"],
       "ingredients": [
@@ -36,11 +36,11 @@
         "Blanda en rub med grovsalt, cayennepeppar, paprika och farinsocker.",
         "Gnid in köttbiten ordentligt med rubben och lägg i grytan.",
         "Häll i rött vin, liquid smoke, rödvinsvinäger, rosépeppar, kryddpeppar och buljong längs sidan — stör inte rubben.",
-        "Sätt på crockpoten på low i 6 timmar.",
-        "Efter ca 5 timmar, dra isär köttbiten med två gafflar och låt ligga kvar ytterligare en timme.",
+        "Sätt på crockpoten på low i 7 timmar.",
+        "Efter ca 6 timmar, dra isär köttbiten med två gafflar och låt ligga kvar ytterligare en timme.",
         "Lyft ut köttet och sila bort en del vätska så att det inte serveras som soppa."
       ],
-      "notes": "Lyft inte på locket under tillagning — det släpper ut värmen och förlänger tillagningstiden.",
+      "notes": "Lyft inte på locket under tillagning — det släpper ut värmen och förlänger tillagningstiden. Ett tips är också att reducera buljongen och frys in till senare.",
       "pairings": ["Potatismos", "Pommes", "Hamburgerbröd"]
     }
   ]

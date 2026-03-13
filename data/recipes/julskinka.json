@@ -16,18 +16,18 @@
       "cookTime": 720,
       "servings": 8,
       "temperature": {
-        "oven": "70–72°C",
-        "internalTarget": "68–72°C"
+        "oven": "70-72°C",
+        "internalTarget": "68-72°C"
       },
       "equipment": ["Ugn", "Stektermometer"],
       "ingredients": [
-        { "name": "Rimmad julskinka", "amount": "3–4", "unit": "kg" }
+        { "name": "Rimmad julskinka", "amount": "3-4", "unit": "kg" }
       ],
       "execution": [
-        "Sätt ugnen på 70–72°C.",
+        "Sätt ugnen på 70-72°C.",
         "Behåll plasten kvar runt julskinkan.",
         "Sätt julskinkan i ugnen i ca 12 timmar.",
-        "Kontrollera innertemperaturen med stektermometer: 68°C ger saftigare kött, 70–72°C ger klassisk julskinkesmak.",
+        "Kontrollera innertemperaturen med stektermometer: 68°C ger saftigare kött, 70-72°C ger klassisk julskinkesmak.",
         "Låt skinkan vila innan gilljering."
       ],
       "notes": "Enklaste möjliga metod — plasten fungerar som vakuumpåse och håller kvar all saft. Perfekt att sätta in på kvällen och ta ut på morgonen.",
