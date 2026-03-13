@@ -10,6 +10,8 @@ export const en: Dictionary = {
   },
   filters: {
     showAll: "Show All",
+    showMore: "+ {n} more",
+    showLess: "Show less",
   },
   noResults: {
     title: "No recipes match those filters",

@@ -10,6 +10,8 @@ export interface Dictionary {
   };
   filters: {
     showAll: string;
+    showMore: string;
+    showLess: string;
   };
   noResults: {
     title: string;

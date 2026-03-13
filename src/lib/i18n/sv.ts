@@ -10,6 +10,8 @@ export const sv: Dictionary = {
   },
   filters: {
     showAll: "Visa alla",
+    showMore: "+ {n} till",
+    showLess: "Visa mindre",
   },
   noResults: {
     title: "Inga recept matchar de filtren",
