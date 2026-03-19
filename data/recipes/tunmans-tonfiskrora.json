@@ -1,0 +1,33 @@
+{
+  "id": "tunmans-tonfiskrora",
+  "title": "Tunmans Tonfiskröra",
+  "description": "Klassisk tonfiskröra med hårdkokta ägg, gul lök och majonäs. Enkel och alltid uppskattad.",
+  "tags": ["fisk", "enkel-mat"],
+  "difficulty": "easy",
+  "remark": "Det här klassiska receptet tonfiskröran fick familjen Tunman tag på under en resa till Filipinerna. Sedan dess har det varit deras signaturmelodi i köket, och det är alltid en hit på familjens sammankomster. En riktig favorit!",
+  "versions": [
+    {
+      "version": 1,
+      "date": "2026-03-19",
+      "rating": 7.0,
+      "prepTime": 10,
+      "cookTime": 12,
+      "servings": 4,
+      "ingredients": [
+        { "name": "Tonfisk i olja", "amount": "3", "unit": "burkar" },
+        { "name": "Majonäs", "amount": "2", "unit": "dl" },
+        { "name": "Ägg", "amount": "6", "unit": "st" },
+        { "name": "Gul lök", "amount": "1", "unit": "stor" }
+      ],
+      "execution": [
+        "Koka äggen tills de blir hårdkokta, ca 12 minuter. Spola av med kallt vatten och skala.",
+        "Hacka äggen och den gula löken fint.",
+        "Blanda tonfisken (avrunnen men behåll lite olja för smak), majonäsen, de hackade äggen och löken i en skål.",
+        "Smaka av med salt och peppar.",
+        "Servera på rostat bröd."
+      ],
+      "notes": "Toppa gärna med smörgåskrasse för extra fräschör.",
+      "pairings": ["Rostat bröd", "Smörgåskrasse"]
+    }
+  ]
+}
