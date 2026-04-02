@@ -1,0 +1,36 @@
+{
+  "id": "brigadeiros",
+  "title": "Brigadeiros — Brasiliansk chokladkola",
+  "description": "En brasiliansk chokladkola som är busenkel att göra och smakar som kladdkakesmet. Recept för ca 20 stycken.",
+  "tags": ["dessert", "chocolate", "brazilian", "swedish", "no-bake"],
+  "difficulty": "easy",
+  "images": {
+    "cover": "/images/recipes/brigadeiros/cover.jpg"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "date": "2026-04-03",
+      "rating": 0,
+      "prepTime": 15,
+      "cookTime": 12,
+      "servings": 20,
+      "equipment": ["Kastrull"],
+      "ingredients": [
+        { "name": "Sötad kondenserad mjölk", "amount": "2", "unit": "burkar" },
+        { "name": "Smör", "amount": "50", "unit": "g" },
+        { "name": "Kakao", "amount": "1", "unit": "dl" },
+        { "name": "Salt", "amount": "2", "unit": "krm" },
+        { "name": "Chokladströssel (topping)" }
+      ],
+      "execution": [
+        "Blanda alla ingredienser i en kastrull och värm upp under konstant omrörning tills det kokar upp.",
+        "Så fort det börjar koka, sänk värmen och låt smeten sjuda i cirka 10-12 minuter. Rör hela tiden så att det inte bränns i botten.",
+        "När smeten har tjocknat, ta av kastrullen från värmen och ställ den i kylskåpet i ungefär 2-3 timmar så att den får stelna.",
+        "När smeten är kall, forma cirka 20 lika stora bollar. Det går lättare om du har lite fuktiga händer. Rulla bollarna i chokladströssel eller kakao."
+      ],
+      "notes": "Recept av Maria Gergi. Första försöket — följde receptet rakt av.",
+      "pairings": ["Kaffe"]
+    }
+  ]
+}
