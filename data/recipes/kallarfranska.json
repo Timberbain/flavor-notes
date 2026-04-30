@@ -5,6 +5,9 @@
   "tags": ["bröd", "bakning"],
   "difficulty": "easy",
   "remark": "Originalrecept: https://www.ica.se/recept/kallarfranska-729217/",
+  "images": {
+    "cover": "/images/recipes/kallarfranska/cover.jpg"
+  },
   "versions": [
     {
       "version": 1,
@@ -37,6 +40,39 @@
       ],
       "notes": "Ändrad mjölkvot jämfört med originalet — 520g vetemjöl + 200g grahamsmjöl istället för 720g vetemjöl. Ger en nötigare smak och grövre textur. Lade också till tranbär.",
       "pairings": ["Smör", "Ost", "Marmelad"]
+    },
+    {
+      "version": 2,
+      "date": "2026-04-30",
+      "rating": 8,
+      "prepTime": 20,
+      "cookTime": 12,
+      "servings": 16,
+      "temperature": {
+        "oven": "225°C"
+      },
+      "equipment": ["Degbunke", "Bakplåt med bakplåtspapper", "Bakduk"],
+      "ingredients": [
+        { "name": "Mjölk", "amount": "5", "unit": "dl" },
+        { "name": "Jäst", "amount": "50", "unit": "g" },
+        { "name": "Vetemjöl", "amount": "520", "unit": "g" },
+        { "name": "Grahamsmjöl", "amount": "200", "unit": "g" },
+        { "name": "Salt", "amount": "2", "unit": "tsk" },
+        { "name": "Olja", "amount": "3", "unit": "msk" },
+        { "name": "Torkade tranbör", "amount": 1, "unit": "näve" },
+        { "name": "Solrosfrön", "amount": 1, "unit": "näve" }
+      ],
+      "execution": [
+        "Värm mjölken till 37°C.",
+        "Smula jästen i en degbunke och rör ut den med lite av mjölken. Tillsätt resten av mjölken och därefter nästan allt mjöl (spara lite till utbakning), salt och olja. Knåda degen i maskin i ca 5 minuter. Häll i tranbär och solrosfrön efter att ha knådat i 1 minut.",
+        "Låt degen jäsa övertäckt av en bakduk i 45 minuter.",
+        "Häll upp degen på mjölad bänkskiva och knåda den lite med händerna. Forma till 2 tunna limpor och skär limporna till 16 bullar och lägg dem på en bakplåtspappersklädd plåt.",
+        "Strö lite mjöl på bullarna och låt jäsa i ytterligare 30 minuter under bakduk.",
+        "Sätt ugnen på 225°C.",
+        "Baka bröden mitt i ugnen ca 12 minuter och låt därefter svalna på ett galler utan bakduk."
+      ],
+      "notes": "Adderade solrosfrön. Man kan också byta ut lite av mjölet till Dinkel, har provat ett par gånger och det funkar fint.",
+      "pairings": ["Smör", "Ost", "Marmelad", "Linssoppa"]
     }
   ]
 }
